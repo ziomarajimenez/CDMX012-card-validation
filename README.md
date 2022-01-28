@@ -37,3 +37,7 @@ Del primer boceto se sugirió se agregaran los mensajes de “Tarjeta válida”
 ![alt text](https://github.com/ziomarajimenez/CDMX012-card-validation/blob/main/tercerapantalla.png?raw=true)
 
 ***Pantalla cuando la tarjeta es inválida***
+
+---
+permalink: /index.html
+---
