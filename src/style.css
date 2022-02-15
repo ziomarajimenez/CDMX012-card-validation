@@ -1,13 +1,15 @@
 html {
   font-family: "Ubuntu", sans-serif;
   box-sizing: border-box;
-  width: 100%;
-  height: 720px;
 }
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.cent {
+  width: 200px;
 }
 
 header {
@@ -24,16 +26,6 @@ header {
   padding-right: 15px;
 }
 
-body {
-  margin: 0cm;
-}
-
-.split {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-
 #about {
   width: 100%;
   height: 180px;
@@ -45,12 +37,30 @@ body {
   padding: 0.7cm;
 }
 
+.hover {
+  padding: 1.5%;
+}
+.hover:hover {
+  color: #e71862;
+  font-weight: bolder;
+}
+
+body {
+  margin: 0cm;
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
 h2 {
   display: flex;
   align-items: flex-start;
 }
 
-main {
+h3 {
   text-align: center;
 }
 
@@ -102,65 +112,37 @@ fieldset {
   border-radius: 20px;
 }
 
-.info {
+nav {
   margin-left: 0px;
+  padding: 1%;
 }
 
-#valido {
-  display: none;
+.foto {
   position: absolute;
-  width: 515px;
-  height: 40px;
-  left: 152px;
-  top: 260px;
-  font-family: Ubuntu;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 25px;
-  letter-spacing: -0.02em;
-
-  color: green;
-}
-#invalido {
-  display: none;
-  position: absolute;
-  width: 515px;
-  height: 40px;
-  left: 151px;
-  top: 260px;
-  font-family: Ubuntu;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 25px;
-  letter-spacing: -0.02em;
-
-  color: red;
 }
 
 #foto1 {
-  position: absolute;
   left: 100px;
-  top: 60px;
+  top: 50px;
+  width: 7%;
 }
 
 #foto2 {
-  position: absolute;
   left: 300px;
   top: 60px;
+  width: 8%;
 }
 
 #foto3 {
-  position: absolute;
   left: 400px;
-  top: 60px;
+  top: 65px;
+  width: 12%;
 }
 
 #foto4 {
-  position: absolute;
   left: 500px;
-  top: 60px;
+  top: 38px;
+  width: 18%;
 }
 
 #input {
@@ -202,4 +184,37 @@ fieldset {
 
 .left {
   float: left;
+}
+
+#valido {
+  display: none;
+  position: absolute;
+  width: 515px;
+  height: 40px;
+  left: 152px;
+  top: 260px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+
+  color: green;
+}
+
+#invalido {
+  display: none;
+  position: absolute;
+  width: 515px;
+  height: 40px;
+  left: 151px;
+  top: 260px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: red;
 }

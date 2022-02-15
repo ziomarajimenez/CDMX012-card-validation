@@ -2,15 +2,14 @@
 const validator = {
   isValid: (creditCardNumber) => {
     let data = creditCardNumber.split("").map(Number);
-    console.log(data);
 
+    //Select odd positions and create an array with the values
     let imp = [];
     for (let i = 0; i < data.length; i++) {
       if (i % 2 === 0) {
         imp.push(data[i]);
       }
     }
-    console.log(imp);
 
     let multiplicado = [];
     function mult() {
@@ -64,11 +63,7 @@ const validator = {
   },
 
   maskify: (creditCardNumber) => {
-    // const number1 = creditCardNumber.slice(creditCardNumber.length - 4);
-    // // const number2 = creditCardNumber.slice(0, creditCardNumber.length - 4);
-
-    // let maskify1 = `############${number1}`;
-    // return maskify1;
+  
     let newMaskify = "";
     for (let i = 0; i < creditCardNumber.length; i++) {
       if (i < creditCardNumber.length - 4) {
@@ -79,6 +74,7 @@ const validator = {
     }
     return newMaskify;
   },
+
 };
 
 export default validator;
